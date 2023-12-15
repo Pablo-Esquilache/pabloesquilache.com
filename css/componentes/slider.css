@@ -1,0 +1,43 @@
+/* Estilos para el contenedor del slider */
+.slider-container {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  top: 100vh;
+  overflow: hidden;
+}
+
+/* Estilos para el slider */
+.slider {
+  display: flex;
+  width: 400%;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Estilos para las imágenes dentro del slider */
+img {
+  width: 100%;
+  flex: 0 0 100%;
+}
+
+/* Estilos para los botones de navegación del slider */
+.button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Estilos para el botón de navegación izquierdo */
+#btn-prev {
+  left: 10px;
+}
+
+/* Estilos para el botón de navegación derecho */
+#btn-next {
+  right: 10px;
+}

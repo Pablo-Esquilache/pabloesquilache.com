@@ -1,0 +1,110 @@
+/* Estilos para el encabezado */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; 
+  background-color: transparent; 
+  transition: background-color 0.3s ease;
+}
+
+.color-pagina {
+  background-color: rgb(102, 51, 255);
+}
+
+/* Estilos para el logo */
+.logo {
+  max-width: 130px;
+  display: none;
+}
+
+/* Estilos para la lista de navegación */
+ul {
+  display: flex;
+  list-style-type: none;
+  gap: 2rem;
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Estilos para el botón de abrir el menú en pantallas pequeñas */
+.abrir-menu {
+  display: none;
+}
+
+/* Estilos para el botón de cerrar el menú en pantallas pequeñas */
+.cerrar-menu {
+  display: none;
+}
+
+/* Estilos para el enlace activo en el menú*/
+#nav-responsive li a.active {
+  border-bottom: 3.5px solid white;
+} 
+
+header.scroll #nav-responsive li a.active {
+  border-bottom-color: black; /* Cambiar el color a negro al hacer scroll */
+}
+
+/* Estilos para el encabezado cuando se hace scroll */ 
+header.scroll {
+  background-color: #ffffff;
+}
+
+header.scroll .logo {
+  display: inline-block; /* Mostrar el logo al hacer scroll */
+}
+
+header.scroll ul li a {
+  color: black; /* Cambiar el color de las etiquetas "a" al hacer scroll */
+}
+
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 550px) {
+  .abrir-menu,
+  .cerrar-menu {
+    display: block;
+    border: 0;
+    font-size: 1.5rem;
+    background-color: transparent;
+    cursor: pointer;
+    margin-left: auto;
+  }
+
+  nav {
+    position: absolute;
+    display: flex; 
+    align-items: end; 
+    flex-direction: column;
+    opacity: 0;
+    visibility: hidden;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    left: 50%;
+    gap: 1rem;
+    padding: 2rem;
+    background-color: rgb(102, 51, 255);
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+
+  ul {
+    flex-direction: column;
+    align-items: end;
+  }
+  
+  nav.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+
+}
+    

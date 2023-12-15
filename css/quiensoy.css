@@ -1,0 +1,34 @@
+.quiensoy-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 150px;
+}
+
+.img-container {
+  width: 50%;
+}
+
+.card-container {
+  width: 50%;
+}
+
+.card-quiensoy-1,
+.card-quiensoy-3 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin: 10px;
+}
+
+.card-quiensoy-2,
+.card-quiensoy-4 {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 10px;
+  margin: 10px;
+}
+
+.img-card-quiensoy {
+  width: 100px;
+}

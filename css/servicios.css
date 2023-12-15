@@ -1,0 +1,21 @@
+.servicios-card-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.card-servicios-1, .card-servicios-2, .card-servicios-3 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 10px;
+}
+
+.card-servicios-2 {
+    flex-direction: row-reverse;
+}
+
+.img-card-servicios {
+    width: 180px;
+    margin: auto;
+}
