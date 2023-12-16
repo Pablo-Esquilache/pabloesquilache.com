@@ -13,6 +13,7 @@
 
 .card-servicios-2 {
     flex-direction: row-reverse;
+    text-align: right;
 }
 
 .img-card-servicios {

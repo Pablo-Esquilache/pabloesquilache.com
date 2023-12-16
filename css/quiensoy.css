@@ -24,7 +24,8 @@
 .card-quiensoy-2,
 .card-quiensoy-4 {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row-reverse;  
+  text-align: right;
   gap: 10px;
   margin: 10px;
 }
