@@ -1,39 +1,44 @@
-
 .contacto-container {
-    margin-top: 150px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    min-height: 55vh;
+  margin-top: 150px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 55vh;
 }
 
-.card-contacto-1, .card-contacto-2, .card-contacto-3, .card-contacto-4 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-    margin: 10px;
+.card-contacto-1,
+.card-contacto-2,
+.card-contacto-3,
+.card-contacto-4 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  margin: 10px;
 }
-
+.card-contacto-2,
+.card-contacto-4 {
+  flex-direction: row-reverse !important;
+}
 .img-card-contacto {
-    width: 50px;
+  width: 50px;
 }
 
 .form-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .whatsapp-button {
-    display: flex; 
-    height: 100%;
-    bottom: 0px;
-    margin-right: 20px;
-    justify-content: flex-end;
+  display: flex;
+  height: 100%;
+  bottom: 0px;
+  margin-right: 20px;
+  justify-content: flex-end;
 }
 
 .whatsapp-button a img {
-    width: 120px;
+  width: 120px;
 }
