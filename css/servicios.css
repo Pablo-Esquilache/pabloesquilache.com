@@ -1,7 +1,7 @@
 .servicios-card-container {
     display: flex;
     flex-direction: column;
-    margin-top: 100px;
+    margin-top: 40px;
 }
 
 .card-servicios-1, .card-servicios-2, .card-servicios-3 {
