@@ -107,7 +107,8 @@ header.scroll ul li a {
   
   nav.visible {
     opacity: 1;
-    visibility: visible;
+    visibility: visible;    
+    background-color: rgb(243, 237, 237);
   }
 }
 
