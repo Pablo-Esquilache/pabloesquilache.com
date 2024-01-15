@@ -18,11 +18,17 @@ footer {
 footer li {
     list-style: none;
 }
+footer li a {
+    color: black;
+}
 
 footer div {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
     gap: 10px;
+    width: 33.3%;
 }
 
  /* Estilos para teléfonos móviles */

@@ -12,7 +12,7 @@
   flex-direction: column;
   justify-content: space-between;
   width: 35%;
-  height: 100%;
+  height: 350px;
 }
 
 .card-contacto-1,
@@ -30,16 +30,21 @@
   flex-direction: row-reverse !important;
   text-align: right;
 }
-.img-card-contacto {
-  width: 50px;
+
+.card-contacto-3 a {
+  text-decoration: none;
+  color: black;
 }
+/* .img-card-contacto {
+  width: 50px;
+} */
 
 .form-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 35%;
-  height: 100%;
+  height: 350px;
 }
 .form-container input{
   width: 100%;

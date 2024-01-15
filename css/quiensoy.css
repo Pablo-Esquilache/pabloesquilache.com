@@ -1,33 +1,36 @@
 .quiensoy-container {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
   width: 100%;
   margin-top: 40px;
 }
 
-.img-container {
+/* .img-container {
   width: 50%;
 }
 
 .card-container {
   width: 50%;
-}
+} */
 
 .card-quiensoy-1,
 .card-quiensoy-3 {
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 10px;
-  margin: 10px;
+  margin: 10px;          
 }
 
 .card-quiensoy-2,
 .card-quiensoy-4 {
   display: flex;
-  flex-direction: row-reverse;  
+  flex-direction: row-reverse;
+  align-items: center;  
   text-align: right;
   gap: 10px;
-  margin: 10px;
+  margin: 10px;     
 }
 
 .img-card-quiensoy {
