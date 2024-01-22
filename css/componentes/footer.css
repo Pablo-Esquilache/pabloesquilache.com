@@ -8,7 +8,7 @@ footer {
     text-align: center;
     width: 100%;
     height: 70px;
-    border: 1px solid black;
+    border-top: 1px solid black;
     margin-top: 150px;
     bottom: 0;
   }
@@ -38,6 +38,9 @@ footer div {
         align-items: center;
         height: 50%;
     }
+    footer div {
+        width: 100%;
+    }
 }
 
 /* Estilos para tabletas */
@@ -46,6 +49,9 @@ footer div {
         flex-direction: column;
         align-items: center;
         height: 50%;
+    }
+    footer div {
+        width: 100%;
     }
 }
 
