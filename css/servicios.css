@@ -3,7 +3,6 @@
     flex-direction: column;    
     width: 100%;
     margin-top: 40px;
-    gap: 10px;
 }
 
 .card-servicios-1, .card-servicios-2, .card-servicios-3 {
@@ -12,7 +11,7 @@
     align-items: center;
     height: 150px;
     margin: 10px;
-    margin: 20px 0 20px 0;
+    margin: 40px 0 40px 0;
 }
 .card-servicios-text {
     height: 100%;
@@ -25,7 +24,7 @@
 }
 
 .img-card-servicios {
-    width: 180px;
+    width: 100%;
     margin: auto;
 }
 

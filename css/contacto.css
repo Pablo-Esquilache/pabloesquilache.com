@@ -35,6 +35,13 @@
   text-decoration: none;
   color: black;
 }
+
+.card-contacto-1 i,
+.card-contacto-2 i,
+.card-contacto-3 i,
+.card-contacto-4 i {
+font-size: 40px;
+}
 /* .img-card-contacto {
   width: 50px;
 } */
@@ -78,6 +85,7 @@
  @media only screen and (max-width: 600px) {
   .contacto-container {
     flex-direction: column;
+    margin-top: 50px;
   }
   .info-container, .form-container {
     width: 70%;
