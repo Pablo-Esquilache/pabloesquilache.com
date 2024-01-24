@@ -1,11 +1,11 @@
 body {
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-  }
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+}
 
-  h1 {
-    margin: 100px 0 0 10px;
-  }
+h1 {
+  margin: 100px 0 0 10px;
+}

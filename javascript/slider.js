@@ -1,4 +1,3 @@
-
 export function slider() {
   const slider = document.querySelector(".slider");
   const totalSlides = document.querySelectorAll(".slider img").length;

@@ -1,58 +1,55 @@
 footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #f8f8f8;
-    padding: 10px;
-    text-align: center;
-    width: 100%;
-    height: 70px;
-    border-top: 1px solid black;
-    margin-top: 150px;
-    bottom: 0;
-  }
-  
-
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f8f8f8;
+  padding: 10px;
+  text-align: center;
+  height: 70px;
+  border-top: 1px solid black;
+  margin-top: 150px;
+  bottom: 0;
+}
 
 footer li {
-    list-style: none;
+  list-style: none;
 }
 footer li a {
-    color: black;
+  color: black;
 }
 
 footer div {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    width: 33.3%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 33.3%;
 }
 
- /* Estilos para teléfonos móviles */
- @media only screen and (max-width: 600px) {
-    footer {
-        flex-direction: column;
-        align-items: center;
-        height: 50%;
-    }
-    footer div {
-        width: 100%;
-    }
+/* Estilos para teléfonos móviles */
+@media only screen and (max-width: 600px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+    height: 50%;
+  }
+  footer div {
+    width: 100%;
+  }
 }
 
 /* Estilos para tabletas */
 @media only screen and (min-width: 601px) and (max-width: 900px) {
-    footer {
-        flex-direction: column;
-        align-items: center;
-        height: 50%;
-    }
-    footer div {
-        width: 100%;
-    }
+  footer {
+    flex-direction: column;
+    align-items: center;
+    height: 50%;
+  }
+  footer div {
+    width: 100%;
+  }
 }
 
 /* Estilos para computadoras portátiles y pantallas medianas */
@@ -62,4 +59,3 @@ footer div {
 /* Estilos para computadoras de escritorio y pantallas grandes */
 @media only screen and (min-width: 1201px) {
 }
-
