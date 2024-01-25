@@ -83,6 +83,12 @@ header.scroll ul li a {
     margin-left: auto;
   }
 
+  .abrir-menu i,
+  .cerrar-menu i {
+    color: white;
+    font-size: 30px;
+  }
+
   nav {
     position: absolute;
     display: flex;
@@ -132,6 +138,12 @@ header.scroll ul li a {
     background-color: transparent;
     cursor: pointer;
     margin-left: auto;
+  }
+
+  .abrir-menu i,
+  .cerrar-menu i {
+    color: white;
+    font-size: 30px;
   }
 
   nav {
