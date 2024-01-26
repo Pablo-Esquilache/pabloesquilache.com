@@ -45,6 +45,10 @@ ul li a {
   display: none;
 }
 
+header.scroll .abrir-menu i {
+  color: black;
+}
+
 /* Estilos para el enlace activo en el menú*/
 #nav-responsive li a.active {
   border-bottom: 3.5px solid white;
@@ -59,8 +63,12 @@ header.scroll {
   background-color: #ffffff;
 }
 
+header.scroll button {
+  color: black;
+}
+
 header.scroll .logo {
-  display: inline-block; /* Mostrar el logo al hacer scroll */
+  display: inline-block;
 }
 
 header.scroll ul li a {
@@ -85,8 +93,8 @@ header.scroll ul li a {
 
   .abrir-menu i,
   .cerrar-menu i {
-    color: white;
     font-size: 30px;
+    color: white;
   }
 
   nav {
@@ -117,9 +125,12 @@ header.scroll ul li a {
     visibility: visible;
     background-color: rgb(102, 51, 255);
   }
-  .logo {
+
+  /* .logo {
+    display: block;
     width: 100px;
-  }
+  } */
+
   header.scroll ul li a {
     color: white; /* Cambiar el color de las etiquetas "a" al hacer scroll */
   }
@@ -174,9 +185,12 @@ header.scroll ul li a {
     visibility: visible;
     background-color: rgb(102, 51, 255);
   }
-  .logo {
+
+  /* .logo {
     width: 100px;
-  }
+    display: block;
+  } */
+
   header.scroll ul li a {
     color: white; /* Cambiar el color de las etiquetas "a" al hacer scroll */
   }
