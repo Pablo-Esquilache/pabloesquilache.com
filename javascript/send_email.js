@@ -1,30 +1,26 @@
 export function sendEmail() {
-  document.addEventListener("DOMContentLoaded", function () {
-    const btn = document.getElementById("button");
+  const btn = document.getElementById('button');
 
-    if (btn) {
-      document.getElementById("form").addEventListener("submit", function (e) {
-        e.preventDefault();
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
 
-        btn.value = "Enviando...";
+   btn.value = 'Enviando...';
 
-        const serviceID = "default_service";
-        const templateID = "template_kym0z0o";
+   const serviceID = 'default_service';
+   const templateID = 'template_kym0z0o';
 
-        emailjs.sendForm(serviceID, templateID, this).then(
-          () => {
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      console.log("Correo enviado con éxito");
             btn.value = "Mensaje enviado!";
             setTimeout(() => {
               btn.value = "Enviar";
               form.reset();
             }, 1000);
-          },
-          (err) => {
-            btn.value = "Enviar";
-            alert(JSON.stringify(err));
-          }
-        );
-      });
-    }
-  });
+    }, (err) => {
+      btn.value = 'Enviar';
+      alert(JSON.stringify(err));
+    });
+});
 }

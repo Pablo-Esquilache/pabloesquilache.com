@@ -1,4 +1,4 @@
-import { set_contacts } from "./set_contacts.js";
+import { set_contacts } from "./add_contacts.js";
 
 const FORM = document.getElementById("form");
 
