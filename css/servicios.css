@@ -1,12 +1,8 @@
-.servicios-text-container {
-  padding: 10px;
-}
-
 .servicios-card-container {
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-top: 40px;
+  margin-top: 160px;
   padding: 10px;
 }
 

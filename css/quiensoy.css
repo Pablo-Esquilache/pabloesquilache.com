@@ -1,9 +1,16 @@
 .quiensoy-container {
   display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 160px;
+  padding: 10px;
+}
+
+.quiensoy-cv-container {
+  display: flex;
   flex-direction: row;
   justify-content: space-around;
   width: 100%;
-  margin-top: 40px;
   padding: 10px;
 }
 
@@ -48,7 +55,7 @@
 
 /* Estilos para teléfonos móviles */
 @media only screen and (max-width: 600px) {
-  .quiensoy-container {
+  .quiensoy-cv-container {
     flex-direction: column;
   }
   .img-container {
@@ -67,7 +74,7 @@
 
 /* Estilos para tabletas */
 @media only screen and (min-width: 601px) and (max-width: 900px) {
-  .quiensoy-container {
+  .quiensoy-cv-container {
     flex-direction: column;
   }
   .img-container {
