@@ -6,6 +6,16 @@
   padding: 10px;
 }
 
+.quiensoy-txt-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quiensoy-txt-container p {
+  text-align: center;
+}
+
 .quiensoy-cv-container {
   display: flex;
   flex-direction: row;
