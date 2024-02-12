@@ -30,6 +30,11 @@
   overflow-wrap: break-word;
 }
 
+.card-index div a {
+  text-decoration: none;
+  color: black;
+}
+
 .img-card-index {
   width: 100px;
 }
