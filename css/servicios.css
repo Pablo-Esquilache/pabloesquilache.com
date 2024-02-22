@@ -1,8 +1,21 @@
+.main-container {
+display: flex;
+flex-direction: row;
+}
+
+.img-servicios-container {
+  width: 40%;
+  height: 500px;
+  margin-top: 150px;
+  overflow: hidden;
+}
+
 .servicios-card-container {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  margin-top: 160px;
+  width: 60%;
+  height: 500px;
+  margin-top: 150px;
   padding: 10px;
 }
 
@@ -11,24 +24,31 @@
 .card-servicios-3 {
   display: flex;
   flex-direction: row;
-  align-items: center;
   height: 150px;
-  margin: 40px 0 40px 0;
+  margin: 5px 0 5px 0;
 }
+
 .card-servicios-text {
   height: 100%;
   overflow: auto;
 }
 
-.card-servicios-2 {
-  flex-direction: row-reverse;
-  text-align: right;
+.card-servicios-text p {
+ font-size: 14px !important;
 }
 
-.img-card-servicios {
-  width: 150px;
-  margin: auto;
-}
+/* .img-card-container {
+width: 100%;
+height: 100%;
+display: flex;
+align-items: flex-start;
+justify-content: flex-end;
+overflow: hidden;
+} */
+
+/* .img-card-servicios {
+  width: 130px;
+} */
 
 /* Estilos para teléfonos móviles */
 @media only screen and (max-width: 600px) {

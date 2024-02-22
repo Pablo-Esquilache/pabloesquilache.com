@@ -1,49 +1,80 @@
 /* Estilos para el encabezado */
 header {
   display: flex;
-  align-items: center;
-  justify-content: space-around;
-  padding: 2rem;
+  flex-direction: row;
+  justify-content: space-between;
   position: fixed;
-  top: 0;
   width: 100%;
+  height: 150px;
+  padding: 2rem;
+  top: 0;
   z-index: 1000;
-  background-color: transparent;
+  /* background-color: transparent; */
   transition: background-color 0.3s ease;
 }
 
 .color-pagina {
-  background-color: rgb(102, 51, 255);
-}
-.logo-visible { 
-  display: block !important;
+  background-color: rgb(255, 102, 0);
 }
 
-/* Estilos para el logo */
+.nav-responsive {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
 .logo {
-  max-width: 130px;
-  display: none;
-  margin-top: 20px;
+  max-width: 80px;
 }
 
-/* Estilos para la lista de navegación */
+/* .logo-visible { 
+  display: block !important;
+} */
+
+.abrir-menu {
+  display: none;
+}
+
+/* nav {
+  margin-left: 50px;
+} */
+
+.img-inicio {
+  width: 80px !important;
+}
+
 ul {
   display: flex;
+  align-items: center;
   list-style-type: none;
   gap: 2rem;
 }
 
 ul li a {
   text-decoration: none;
-  color: white;
+  color: rgb(255, 102, 0);
 }
 
-/* Estilos para el botón de abrir el menú en pantallas pequeñas */
-.abrir-menu {
-  display: none;
+.a-menu {
+  text-decoration: none;
+  color: rgb(255, 102, 0);
+  background-image: url("../../imagnes/boton-menu.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 120px; /* Cambia este valor según el tamaño deseado */
+  height: 60px; /* Cambia este valor según el tamaño deseado */
+  display: inline-block; /* Para que width y height funcionen correctamente */
+  line-height: 50px; /* Para centrar verticalmente el contenido */
+  text-align: center; /* Para centrar horizontalmente el contenido */
 }
 
-/* Estilos para el botón de cerrar el menú en pantallas pequeñas */
 .cerrar-menu {
   display: none;
 }
@@ -53,9 +84,9 @@ header.scroll .abrir-menu i {
 }
 
 /* Estilos para el enlace activo en el menú*/
-#nav-responsive li a.active {
+/* #nav-responsive li a.active {
   border-bottom: 3.5px solid white;
-}
+} */
 
 header.scroll #nav-responsive li a.active {
   border-bottom-color: black; /* Cambiar el color a negro al hacer scroll */
@@ -63,7 +94,7 @@ header.scroll #nav-responsive li a.active {
 
 /* Estilos para el encabezado cuando se hace scroll */
 header.scroll {
-  background-color: #ffffff;
+  background-color: rgb(255, 102, 0);
 }
 
 header.scroll button {
@@ -74,9 +105,9 @@ header.scroll .logo {
   display: inline-block;
 }
 
-header.scroll ul li a {
-  color: black; /* Cambiar el color de las etiquetas "a" al hacer scroll */
-}
+/* header.scroll ul li a {
+  color: black;
+} */
 
 /* Estilos para pantallas pequeñas */
 /* @media screen and (max-width: 550px) {
@@ -84,6 +115,9 @@ header.scroll ul li a {
 
 /* Estilos para teléfonos móviles */
 @media screen and (max-width: 600px) {
+  header {
+    flex-direction: row-reverse;
+  }
   .abrir-menu,
   .cerrar-menu {
     display: block;
@@ -113,7 +147,7 @@ header.scroll ul li a {
     left: 50%;
     gap: 1rem;
     padding: 2rem;
-    background-color: rgb(102, 51, 255);
+    /* background-color: rgb(255, 102, 0); */
     box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
     transition: opacity 0.3s ease, visibility 0.3s ease;
   }
@@ -126,7 +160,11 @@ header.scroll ul li a {
   nav.visible {
     opacity: 1;
     visibility: visible;
-    background-color: rgb(102, 51, 255);
+    background-color: rgb(255, 102, 0);
+  }
+
+  .logo-container {
+    align-items: flex-start;
   }
 
   /* .logo {
@@ -144,6 +182,10 @@ header.scroll ul li a {
 
 /* Estilos para tabletas */
 @media screen and (min-width: 601px) and (max-width: 900px) {
+  header {
+    flex-direction: row-reverse;
+  }
+
   .abrir-menu,
   .cerrar-menu {
     display: block;
@@ -173,7 +215,7 @@ header.scroll ul li a {
     left: 50%;
     gap: 1rem;
     padding: 2rem;
-    background-color: rgb(102, 51, 255);
+    /* background-color: rgb(255, 102, 0); */
     box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
     transition: opacity 0.3s ease, visibility 0.3s ease;
   }
@@ -183,10 +225,14 @@ header.scroll ul li a {
     align-items: end;
   }
 
+  .logo-container {
+    align-items: flex-start;
+  }
+
   nav.visible {
     opacity: 1;
     visibility: visible;
-    background-color: rgb(102, 51, 255);
+    background-color: rgb(255, 102, 0);
   }
 
   /* .logo {

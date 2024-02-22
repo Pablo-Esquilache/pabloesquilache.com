@@ -10,13 +10,16 @@
   height: 100%;
 }
 
+.portada-web-responsive {
+  display: none;
+}
+
 .index-card-container {
   display: flex;
   flex-direction: row;
   width: 100%;
   top: 100vh;
   z-index: 1;
-  margin-top: 25px;
 }
 
 .card-index {
@@ -36,11 +39,19 @@
 }
 
 .img-card-index {
-  width: 100px;
+  width: 150px;
 }
 
 /* Estilos para teléfonos móviles */
 @media only screen and (max-width: 600px) {
+  .portada-web {
+    display: none;
+  }
+
+  .portada-web-responsive {
+    display: block;
+  }
+  
   .index-card-container {
     flex-direction: column;
   }
