@@ -52,10 +52,27 @@ overflow: hidden;
 
 /* Estilos para teléfonos móviles */
 @media only screen and (max-width: 600px) {
+  .main-container {
+    flex-direction: column-reverse;
+  }
+  .img-servicios-container {
+    width: 100%;
+    margin-top: 10px;
+  } 
+.servicios-card-container {
+  width: 100%;
+} 
+
+.img-card-servicios {
+  width: 100px;
+}
 }
 
 /* Estilos para tabletas */
 @media only screen and (min-width: 601px) and (max-width: 900px) {
+  .img-card-servicios {
+    width: 125px;
+  }
 }
 
 /* Estilos para computadoras portátiles y pantallas medianas */

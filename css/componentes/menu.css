@@ -79,9 +79,9 @@ ul li a {
   display: none;
 }
 
-header.scroll .abrir-menu i {
+/* header.scroll .abrir-menu i {
   color: black;
-}
+} */
 
 /* Estilos para el enlace activo en el menú*/
 /* #nav-responsive li a.active {
