@@ -20,6 +20,8 @@
   width: 100%;
   top: 100vh;
   z-index: 1;
+  /* background-image: url('../imagnes/fondo-botones-servicios.png');
+  background-size: cover; */
 }
 
 .card-index {
@@ -36,6 +38,10 @@
 .card-index div a {
   text-decoration: none;
   color: black;
+}
+
+.card-index div p {
+  font-size: 14px !important;
 }
 
 .img-card-index {

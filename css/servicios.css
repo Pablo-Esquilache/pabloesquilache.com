@@ -1,6 +1,6 @@
 .main-container {
-display: flex;
-flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .img-servicios-container {
@@ -8,6 +8,10 @@ flex-direction: row;
   height: 500px;
   margin-top: 150px;
   overflow: hidden;
+}
+
+.img-servicios-responsive {
+  display: none;
 }
 
 .servicios-card-container {
@@ -24,52 +28,89 @@ flex-direction: row;
 .card-servicios-3 {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
   height: 150px;
-  margin: 5px 0 5px 0;
+  margin: 5px 0 15px 0;
+}
+
+.img-card-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 30%;
 }
 
 .card-servicios-text {
+  width: 70%;
   height: 100%;
+  padding-right: 45px;
   overflow: auto;
 }
 
 .card-servicios-text p {
- font-size: 14px !important;
+  font-size: 14px !important;
 }
-
-/* .img-card-container {
-width: 100%;
-height: 100%;
-display: flex;
-align-items: flex-start;
-justify-content: flex-end;
-overflow: hidden;
-} */
-
-/* .img-card-servicios {
-  width: 130px;
-} */
 
 /* Estilos para teléfonos móviles */
 @media only screen and (max-width: 600px) {
   .main-container {
     flex-direction: column-reverse;
   }
+
+  .servicios-card-container {
+    width: 100%;
+  }
+
   .img-servicios-container {
     width: 100%;
-    margin-top: 10px;
-  } 
-.servicios-card-container {
-  width: 100%;
-} 
+  }
 
-.img-card-servicios {
-  width: 100px;
-}
+  .img-servicios {
+    display: block;
+  }
+
+  .card-servicios-1,
+  .card-servicios-2,
+  .card-servicios-3 {
+    margin: 5px 0 50px 0;
+  }
+
+  .img-card-servicios {
+    width: 100px;
+  }
 }
 
 /* Estilos para tabletas */
 @media only screen and (min-width: 601px) and (max-width: 900px) {
+  .main-container {
+    flex-direction: column-reverse;
+  }
+
+  .img-servicios-container {
+    width: 100%;
+  }
+
+  .img-servicios-responsive {
+    display: block;
+  }
+
+  .img-servicios {
+    display: none;
+  }
+
+  .servicios-card-container {
+    width: 100%;
+  }
+
+  .card-servicios-1,
+  .card-servicios-2,
+  .card-servicios-3 {
+    margin: 5px 0 30px 0;
+  }
+  .img-card-servicios {
+    width: 100px;
+  }
   .img-card-servicios {
     width: 125px;
   }

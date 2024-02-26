@@ -1,24 +1,35 @@
 .quiensoy-container {
   display: flex;
+flex-direction: row;
+}
+
+/* display: flex;
   flex-direction: column;
   width: 100%;
   margin-top: 160px;
-  padding: 10px;
-}
+  padding: 10px; */
 
-.quiensoy-presentacion-container {
-display: flex;
-flex-direction: row;
-align-items: center;
-width: 100%;
-height: 70vh;
+/* .quiensoy-presentacion-container {
+  width: 40%;
+  height: 500px;
+  margin-top: 150px;
+  overflow: hidden;
+} */
+
+.quiensoy-img-container {
+  width: 40%;
+  height: 500px;
+  margin-top: 150px;
+  overflow: hidden;
 }
 
 .quiensoy-txt-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  vertical-align: middle;
+  width: 60%;
+  height: 500px;
+  margin-top: 150px;
+  padding: 10px;
 }
 
 .quiensoy-txt-container p {
