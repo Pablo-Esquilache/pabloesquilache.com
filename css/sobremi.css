@@ -1,20 +1,7 @@
 .quiensoy-container {
   display: flex;
-flex-direction: row;
+  flex-direction: row-reverse;
 }
-
-/* display: flex;
-  flex-direction: column;
-  width: 100%;
-  margin-top: 160px;
-  padding: 10px; */
-
-/* .quiensoy-presentacion-container {
-  width: 40%;
-  height: 500px;
-  margin-top: 150px;
-  overflow: hidden;
-} */
 
 .quiensoy-img-container {
   width: 40%;
@@ -26,14 +13,60 @@ flex-direction: row;
 .quiensoy-txt-container {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   width: 60%;
   height: 500px;
   margin-top: 150px;
   padding: 10px;
 }
 
+.quiensoy-text {
+  display: flex;
+  flex-direction: row;
+  height: 70%;
+}
+
+.txt-presentacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; 
+}
+
 .quiensoy-txt-container p {
+  text-align: center;   
+  overflow: auto;
+}
+
+.quiensoy-card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 20%;
+}
+
+.quiensoy-card-container li {
+  list-style: none;
+  background-image: url("../../imagnes/boton-menu.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 33%;
+  height: 60px;
+  line-height: 65px;
+}
+
+.quiensoy-card-container li h2 {
+  color: rgb(255, 102, 0);
   text-align: center;
+}
+
+.quiensoy-saludo-container {
+  display: flex;
+  height: 10%;
+}
+
+.quiensoy-saludo-container p {
+  color: rgb(255, 102, 0);
 }
 
 .quiensoy-cv-container {
@@ -43,14 +76,6 @@ flex-direction: row;
   width: 100%;
   padding: 10px;
 }
-
-/* .img-container {
-  width: 50%;
-}
-
-.card-container {
-  width: 50%;
-} */
 
 .card-quiensoy-1,
 .card-quiensoy-3 {
@@ -85,6 +110,18 @@ flex-direction: row;
 
 /* Estilos para teléfonos móviles */
 @media only screen and (max-width: 600px) {
+  .quiensoy-container {
+    flex-direction: column;
+  }
+
+  .quiensoy-img-container {
+    width: 100%;
+  }
+
+  .quiensoy-txt-container {
+    width: 100%;
+  }
+
   .quiensoy-presentacion-container {
     flex-direction: column;
   }
@@ -107,6 +144,17 @@ flex-direction: row;
 
 /* Estilos para tabletas */
 @media only screen and (min-width: 601px) and (max-width: 900px) {
+  .quiensoy-container {
+    flex-direction: column;
+  }
+
+  .quiensoy-img-container {
+    width: 100%;
+  }
+
+  .quiensoy-txt-container {
+    width: 100%;
+  }
   .quiensoy-presentacion-container {
     flex-direction: column;
   }
