@@ -98,20 +98,30 @@
 .card-quiensoy-2,
 .card-quiensoy-4 {
   display: none;
-  flex-direction: row;
-  align-items: center;
-  gap: 10px;
-  margin: 10px;
-  height: 150px;
-  margin: 40px 0 40px 0;
+  width: 90%;
+  height: 90%;
+  background-color: rgb(255, 102, 0);;
 }
 
 .card-quien-soy-txt {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: space-between;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
   height: 100%;
   overflow: auto;
+  color: white;
 }
-.img-card-quiensoy {
-  width: 100px;
+
+.card-quien-soy-txt p {
+  font-size: 14px !important;
+}
+
+.modal-open {
+  pointer-events: none;
 }
 
 /* Estilos para teléfonos móviles */
