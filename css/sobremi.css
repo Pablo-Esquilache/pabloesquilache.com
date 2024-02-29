@@ -29,11 +29,11 @@
 .txt-presentacion {
   display: flex;
   flex-direction: column;
-  justify-content: space-around; 
+  justify-content: space-around;
 }
 
 .quiensoy-txt-container p {
-  text-align: center;   
+  text-align: center;
   overflow: auto;
 }
 
@@ -58,6 +58,8 @@
 .quiensoy-card-container li h2 {
   color: rgb(255, 102, 0);
   text-align: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
 .quiensoy-saludo-container {
@@ -69,6 +71,20 @@
   color: rgb(255, 102, 0);
 }
 
+.modal-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 9999;
+  padding: 20px;
+  overflow: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
 .quiensoy-cv-container {
   display: flex;
   flex-direction: row;
@@ -78,22 +94,12 @@
 }
 
 .card-quiensoy-1,
-.card-quiensoy-3 {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 10px;
-  margin: 10px;
-  height: 150px;
-  margin: 40px 0 40px 0;
-}
-
+.card-quiensoy-3,
 .card-quiensoy-2,
 .card-quiensoy-4 {
-  display: flex;
-  flex-direction: row-reverse;
+  display: none;
+  flex-direction: row;
   align-items: center;
-  text-align: right;
   gap: 10px;
   margin: 10px;
   height: 150px;

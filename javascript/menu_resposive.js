@@ -1,3 +1,4 @@
+
 export const manejarNavegacionResponsive = () => {
   const nav = document.querySelector("#nav-responsive");
   const abrir = document.querySelector("#abrir");
