@@ -1,16 +1,9 @@
-.quiensoy-container {
+.sobremi-container {
   display: flex;
   flex-direction: row-reverse;
 }
 
-.quiensoy-img-container {
-  width: 40%;
-  height: 500px;
-  margin-top: 150px;
-  overflow: hidden;
-}
-
-.quiensoy-txt-container {
+.sobremi-txt-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -20,7 +13,7 @@
   padding: 10px;
 }
 
-.quiensoy-text {
+.sobremi-text {
   display: flex;
   flex-direction: row;
   height: 70%;
@@ -32,12 +25,12 @@
   justify-content: space-around;
 }
 
-.quiensoy-txt-container p {
+.sobremi-txt-container p {
   text-align: center;
   overflow: auto;
 }
 
-.quiensoy-card-container {
+.sobremi-card-container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -45,30 +38,38 @@
   height: 20%;
 }
 
-.quiensoy-card-container li {
+.sobremi-card-container li {
   list-style: none;
   background-image: url("../../imagnes/boton-menu.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  width: 33%;
-  height: 60px;
-  line-height: 65px;
+  width: 100%;
+  height: 80px;
 }
 
-.quiensoy-card-container li h2 {
+.sobremi-card-container li h2 {
+  display: flex;
   color: rgb(255, 102, 0);
   text-align: center;
   justify-content: center;
+  margin-top: 33px;
   cursor: pointer;
 }
 
-.quiensoy-saludo-container {
+.sobremi-saludo-container {
   display: flex;
   height: 10%;
 }
 
-.quiensoy-saludo-container p {
+.sobremi-saludo-container p {
   color: rgb(255, 102, 0);
+}
+
+.sobremi-img-container {
+  width: 40%;
+  height: 500px;
+  margin-top: 150px;
+  overflow: hidden;
 }
 
 .modal-container {
@@ -85,32 +86,23 @@
   cursor: pointer;
 }
 
-.quiensoy-cv-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  width: 100%;
-  padding: 10px;
-}
-
-.card-quiensoy-1,
-.card-quiensoy-3,
-.card-quiensoy-2,
-.card-quiensoy-4 {
+.card-sobremi-1,
+.card-sobremi-3,
+.card-sobremi-2,
+.card-sobremi-4 {
   display: none;
   width: 90%;
   height: 90%;
-  background-color: rgb(255, 102, 0);;
+  background-color: rgb(255, 102, 0);
 }
 
 .card-quien-soy-txt {
   display: flex;
   flex-direction: column;
-  align-items:center;
+  align-items: center;
   justify-content: space-between;
   padding: 20px;
   width: 100%;
-  height: 100%;
   height: 100%;
   overflow: auto;
   color: white;
@@ -126,22 +118,22 @@
 
 /* Estilos para teléfonos móviles */
 @media only screen and (max-width: 600px) {
-  .quiensoy-container {
+  .sobremi-container {
     flex-direction: column;
   }
 
-  .quiensoy-img-container {
+  .sobremi-img-container {
     width: 100%;
   }
 
-  .quiensoy-txt-container {
+  .sobremi-txt-container {
     width: 100%;
   }
 
-  .quiensoy-presentacion-container {
+  .sobremi-presentacion-container {
     flex-direction: column;
   }
-  .quiensoy-cv-container {
+  .sobremi-cv-container {
     flex-direction: column;
   }
   .img-container {
@@ -156,25 +148,32 @@
   .card-container {
     width: 100%;
   }
+
+  .h2-2 {
+    height: 100px !important;
+  }
+  .h2-2 h2 {
+    margin-top: 35px !important;
+  }
 }
 
 /* Estilos para tabletas */
 @media only screen and (min-width: 601px) and (max-width: 900px) {
-  .quiensoy-container {
+  .sobremi-container {
     flex-direction: column;
   }
 
-  .quiensoy-img-container {
+  .sobremi-img-container {
     width: 100%;
   }
 
-  .quiensoy-txt-container {
+  .sobremi-txt-container {
     width: 100%;
   }
-  .quiensoy-presentacion-container {
+  .sobremi-presentacion-container {
     flex-direction: column;
   }
-  .quiensoy-cv-container {
+  .sobremi-cv-container {
     flex-direction: column;
   }
   .img-container {
