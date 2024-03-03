@@ -11,7 +11,7 @@ window.addEventListener("DOMContentLoaded", () => {
   //slider();
   // activeMenu();
   scrollScreen();
+  modal();
   formContact();
   sendEmail();
-  modal();
 });

@@ -1,27 +1,40 @@
 .contacto-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   width: 100%;
-  margin-top: 160px;
-  padding: 10px;
+  margin-top: 130px;  
+}
+
+.img-contacto-container {
+  width: 40%;
+  height: 500px;
+  overflow: hidden;
 }
 
 .contacto-cards-container {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 500px;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 30%;
+  padding: 10px 100px 10px 100px;
+}
+.card-container-1, .card-container-2 {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
   width: 100%;
 }
-
-.info-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 35%;
-  height: 350px;
-}
-
+/* 
 .card-contacto-1,
 .card-contacto-2,
 .card-contacto-3,
@@ -29,14 +42,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 10px;
-  margin: 10px;
-}
-.card-contacto-2,
-.card-contacto-4 {
-  flex-direction: row-reverse !important;
-  text-align: right;
-}
+} */
 
 .card-contacto-4 a {
   text-decoration: none;
@@ -47,19 +53,30 @@
 .card-contacto-2 i,
 .card-contacto-3 i,
 .card-contacto-4 i {
-  font-size: 40px;
+  font-size: 60px;
+  color: rgb(255, 102, 0)
 }
-/* .img-card-contacto {
-  width: 50px;
-} */
 
 .form-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  width: 35%;
-  height: 350px;
-  margin-top: 30px;
+  justify-content: space-around;
+  width: 100%;
+  height: 70%;
+  padding: 10px 100px 10px 100px;
+}
+
+.form-container label {
+  display: flex;
+  background-image: url("../../imagnes/boton-menu.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 180px;
+  height: 45px;
+  padding-top: 5px;
+  align-items: center;
+  justify-content: center;
+  color: rgb(255, 102, 0);
 }
 .form-container input {
   width: 100%;
@@ -76,22 +93,51 @@
 
 /* Estilos para teléfonos móviles */
 @media only screen and (max-width: 600px) {
-  .contacto-cards-container {
-    flex-direction: column;
+  .contacto-container {
+    flex-direction: column-reverse;
   }
-  .form-container {
+
+  .img-contacto-container {
     width: 100%;
+    margin-top: 130px;
+  }
+
+  .contacto-cards-container {
+    width: 100%;
+  }
+
+  .info-container {
     padding: 10px;
   }
-  .info-container {
-    width: 100%;
-    justify-content: space-around;
+
+  .form-container {
     padding: 10px;
   }
 }
 
 /* Estilos para tabletas */
 @media only screen and (min-width: 601px) and (max-width: 900px) {
+  .contacto-container {
+    flex-direction: column-reverse;
+  }
+
+  .img-contacto-container {
+    width: 100%;
+    margin-top: 130px;
+  }
+
+  .contacto-cards-container {
+    width: 100%;
+  }
+
+  .info-container {
+    padding: 10px;
+  }
+
+  .form-container {
+    padding: 10px;
+  }
+
 }
 
 /* Estilos para computadoras portátiles y pantallas medianas */
