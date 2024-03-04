@@ -20,8 +20,6 @@
   width: 100%;
   top: 100vh;
   z-index: 1;
-  /* background-image: url('../imagnes/fondo-botones-servicios.png');
-  background-size: cover; */
 }
 
 .card-index {
@@ -69,9 +67,9 @@
 
 /* Estilos para tabletas */
 @media only screen and (min-width: 601px) and (max-width: 900px) {
-  .background-container {
+  /* .background-container {
     height: 50vh;
-  }
+  } */
   .index-card-container {
     flex-direction: column;
   }
@@ -83,9 +81,6 @@
 
 /* Estilos para computadoras portátiles y pantallas medianas */
 @media only screen and (min-width: 901px) and (max-width: 1200px) {
-  .background-container {
-    height: 50vh;
-  }
 }
 
 /* Estilos para computadoras de escritorio y pantallas grandes */

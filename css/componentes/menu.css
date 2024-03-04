@@ -65,7 +65,7 @@ ul li a {
 .a-menu {
   text-decoration: none;
   color: rgb(255, 102, 0);
-  background-image: url("../../imagnes/boton-menu.png");
+  background-image: url("../../imagnes/boton menu.png");
   background-size: contain;
   background-repeat: no-repeat;
   width: 120px; /* Cambia este valor según el tamaño deseado */
@@ -167,16 +167,8 @@ header.scroll .logo {
     align-items: flex-start;
   }
 
-  /* .logo {
-    display: block;
-    width: 100px;
-  } */
-
-  header.scroll ul li a {
-    color: white; /* Cambiar el color de las etiquetas "a" al hacer scroll */
-  }
   header.scroll #nav-responsive li a.active {
-    border-bottom-color: white; /* Cambiar el color a negro al hacer scroll */
+    border-bottom-color: white;
   }
 }
 
@@ -235,14 +227,6 @@ header.scroll .logo {
     background-color: rgb(255, 102, 0);
   }
 
-  /* .logo {
-    width: 100px;
-    display: block;
-  } */
-
-  header.scroll ul li a {
-    color: white; /* Cambiar el color de las etiquetas "a" al hacer scroll */
-  }
   header.scroll #nav-responsive li a.active {
     border-bottom-color: white; /* Cambiar el color a negro al hacer scroll */
   }
