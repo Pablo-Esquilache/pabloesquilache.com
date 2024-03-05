@@ -27,6 +27,7 @@
   height: 30%;
   padding: 10px 100px 10px 100px;
 }
+
 .card-container-1, .card-container-2 {
   display: flex;
   flex-direction: row;
@@ -34,15 +35,6 @@
   justify-content: space-around;
   width: 100%;
 }
-/* 
-.card-contacto-1,
-.card-contacto-2,
-.card-contacto-3,
-.card-contacto-4 {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-} */
 
 .card-contacto-4 a {
   text-decoration: none;
@@ -53,17 +45,17 @@
 .card-contacto-2 i,
 .card-contacto-3 i,
 .card-contacto-4 i {
-  font-size: 60px;
+  font-size: 50px;
   color: rgb(255, 102, 0)
 }
 
 .form-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   width: 100%;
   height: 70%;
-  padding: 10px 100px 10px 100px;
+  padding: 0 100px 0 100px;
 }
 
 .form-container label {
@@ -77,10 +69,13 @@
   align-items: center;
   justify-content: center;
   color: rgb(255, 102, 0);
+  font-size: 14px !important;
 }
+
 .form-container input {
   width: 100%;
 }
+
 .form-container textarea {
   resize: none;
   width: 100%;

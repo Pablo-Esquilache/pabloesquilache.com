@@ -21,10 +21,12 @@
 
 .sobremi-imgtxt-container {
   width: 20%;
+  overflow: hidden;
 }
 
 .sobremi-imgtxt-container img {
-  width: 150px;
+  max-width: 100%;
+  height: auto;
 }
 
 .txt-presentacion {
@@ -49,7 +51,7 @@
 
 .sobremi-card-container li {
   list-style: none;
-  background-image: url("../../imagnes/boton-menu.png");
+  background-image: url("../../imagnes/boton menu.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   width: 100%;
