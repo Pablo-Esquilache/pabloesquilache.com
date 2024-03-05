@@ -7,15 +7,19 @@
 
 .img-contacto-container {
   width: 40%;
-  height: 500px;
+  height: 80vh;
   overflow: hidden;
+}
+
+.img-contacto-container img {
+  width: 100%;
 }
 
 .contacto-cards-container {
   display: flex;
   flex-direction: column;
   width: 60%;
-  height: 500px;
+  height: 80vh;
 }
 
 .info-container {
