@@ -20,5 +20,5 @@ export function slider() {
   document.getElementById("btn-next").addEventListener("click", nextSlide);
   document.getElementById("btn-prev").addEventListener("click", prevSlide);
 
-  setInterval(nextSlide, 4000);
+  setInterval(nextSlide, 10000);
 }

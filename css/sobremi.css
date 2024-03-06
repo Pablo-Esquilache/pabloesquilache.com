@@ -1,6 +1,7 @@
 .sobremi-container {
   display: flex;
   flex-direction: row-reverse;
+  margin-top: 130px;
 }
 
 .sobremi-txt-container {
@@ -9,7 +10,6 @@
   justify-content: space-between;
   width: 60%;
   height: 80vh;
-  margin-top: 130px;
   padding: 10px;
 }
 
@@ -26,6 +26,7 @@
 
 .sobremi-imgtxt-container img {
   max-width: 100%;
+  margin-top: 25%;
   height: auto;
 }
 
@@ -39,6 +40,7 @@
 .sobremi-txt-container p {
   text-align: center;
   overflow: auto;
+  text-align: left;
 }
 
 .sobremi-card-container {
@@ -69,6 +71,8 @@
 
 .sobremi-saludo-container {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   height: 10%;
 }
 
@@ -79,7 +83,6 @@
 .sobremi-img-container {
   width: 40%;
   height: 80vh;
-  margin-top: 130px;
   overflow: hidden;
 }
 

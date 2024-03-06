@@ -10,6 +10,7 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/componentes/slider.css">
     <script
       src="https://kit.fontawesome.com/6da0c13351.js"
       crossorigin="anonymous"
@@ -40,95 +41,111 @@
         </ul>
       </nav>
       <div class="logo-container">
-        <img class="logo logo-visible" src="../imagnes/logo codigo blanco.png" alt="" />
+        <img
+          class="logo logo-visible"
+          src="../imagnes/logo codigo blanco.png"
+          alt=""
+        />
       </div>
     </header>
     <main>
+      <h1>Servicios</h1>
       <section class="servicios-container">
-      <div class="img-servicios-container">
-        <img class="img-servicios" src="../imagnes/pagina-servicios.jpg" alt="" />
-        <img class="img-servicios-responsive" src="../imagnes/pagina-servicios-responsive.jpg" alt="">
-      </div>
-      <div class="servicios-card-container">
-        <h1>Servicios</h1>
-        <div>
-          <article class="card-servicios-1">
-            <div class="img-card-container">
-              <img
-                class="img-card-servicios"
-                src="../imagnes/boton 1.png"
-                alt=""
-              />
+        <div class="img-servicios-container">
+          <div class="slider-container">
+            <div class="slider">
+              <img class="slider-img" src="../imagnes/diseño y dllo.jpg" alt="slider1" />
+              <img class="slider-img" src="../imagnes/administracion.jpg" alt="slider2" />
+              <img class="slider-img" src="../imagnes/tiendas.jpg" alt="slider3" />
             </div>
-            <div class="card-servicios-text">
-              <h2>Diseño y Desarrollo de Sitios Web</h2>
-              <p>
-                Ofrezco servicios completos de diseño y desarrollo web para
-                transformar tu visión en una presencia digital única, ya sea
-                para tu negocio, institución o blog. Desde la conceptualización
-                creativa hasta la implementación técnica, cada sitio web que
-                creo está adaptado a tus necesidades específicas, asegurando una
-                experiencia atractiva y funcional para tus visitantes. Confía en
-                mí para llevar tu presencia en línea al siguiente nivel. Con mi
-                enfoque centrado en tus necesidades y la excelencia en diseño y
-                desarrollo web, estarás preparado para destacarte en el
-                competitivo mundo digital.
-              </p>
-            </div>
-          </article>
-          <br>
-          <article class="card-servicios-2">
-            <div class="img-card-container">
-              <img
-                class="img-card-servicios"
-                src="../imagnes/boton 2.png"
-                alt=""
-              />
-            </div>
-            <div class="card-servicios-text">
-              <h2>Administración de Sitios Web</h2>
-              <p>
-                Administración de Sitios Web: Simplifica tu vida online
-                permitiéndome encargarme de la administración y mantenimiento
-                continuo de tu sitio web, ya sea para tu negocio, institución o
-                blog. Desde actualizaciones de contenido hasta garantizar un
-                rendimiento óptimo, estoy aquí para asegurarme de que tu sitio
-                funcione sin problemas, permitiéndote centrarte en lo que haces
-                mejor. Confía en mí para gestionar eficientemente tu presencia
-                en línea, liberándote de preocupaciones técnicas y permitiéndote
-                enfocarte en tus objetivos principales.
-              </p>
-            </div>
-          </article>
-          <br>
-          <article class="card-servicios-3">
-            <div class="img-card-container">
-              <img
-                class="img-card-servicios"
-                src="../imagnes/boton 3.png"
-                alt=""
-              />
-            </div>
-            <div class="card-servicios-text">
-              <h2>Creación y Gestión de Tiendas Online</h2>
-              <p>
-                Potencia tu presencia comercial con una tienda online
-                personalizada. Desde la creación inicial hasta la gestión
-                diaria, me especializo en desarrollar y mantener tiendas
-                virtuales intuitivas y seguras en WordPress utilizando
-                WooCommerce. Con soluciones de pago fáciles y una experiencia de
-                compra sin problemas, tu tienda online será una herramienta
-                poderosa para aumentar tus ventas y atraer clientes. Confía en
-                mí para crear y administrar una plataforma de comercio
-                electrónico que refleje la esencia de tu marca y te ayude a
-                alcanzar tus objetivos comerciales.
-              </p>
-            </div>
-          </article>
-          <br>
+            <button class="button" id="btn-prev">
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <button class="button" id="btn-next">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
         </div>
-      </div>
-    </section>
+        <div class="servicios-card-container">
+          <div>
+            <article class="card-servicios-1">
+              <div class="img-card-container">
+                <img
+                  class="img-card-servicios"
+                  src="../imagnes/boton 1.png"
+                  alt=""
+                />
+              </div>
+              <div class="card-servicios-text">
+                <h2>Diseño y Desarrollo de Sitios Web</h2>
+                <p>
+                  Ofrezco servicios completos de diseño y desarrollo web para
+                  transformar tu visión en una presencia digital única, ya sea
+                  para tu negocio, institución o blog. Desde la
+                  conceptualización creativa hasta la implementación técnica,
+                  cada sitio web que creo está adaptado a tus necesidades
+                  específicas, asegurando una experiencia atractiva y funcional
+                  para tus visitantes. Confía en mí para llevar tu presencia en
+                  línea al siguiente nivel. Con mi enfoque centrado en tus
+                  necesidades y la excelencia en diseño y desarrollo web,
+                  estarás preparado para destacarte en el competitivo mundo
+                  digital.
+                </p>
+              </div>
+            </article>
+            <br />
+            <article class="card-servicios-2">
+              <div class="img-card-container">
+                <img
+                  class="img-card-servicios"
+                  src="../imagnes/boton 2.png"
+                  alt=""
+                />
+              </div>
+              <div class="card-servicios-text">
+                <h2>Administración de Sitios Web</h2>
+                <p>
+                  Administración de Sitios Web: Simplifica tu vida online
+                  permitiéndome encargarme de la administración y mantenimiento
+                  continuo de tu sitio web, ya sea para tu negocio, institución
+                  o blog. Desde actualizaciones de contenido hasta garantizar un
+                  rendimiento óptimo, estoy aquí para asegurarme de que tu sitio
+                  funcione sin problemas, permitiéndote centrarte en lo que
+                  haces mejor. Confía en mí para gestionar eficientemente tu
+                  presencia en línea, liberándote de preocupaciones técnicas y
+                  permitiéndote enfocarte en tus objetivos principales.
+                </p>
+              </div>
+            </article>
+            <br />
+            <article class="card-servicios-3">
+              <div class="img-card-container">
+                <img
+                  class="img-card-servicios"
+                  src="../imagnes/boton 3.png"
+                  alt=""
+                />
+              </div>
+              <div class="card-servicios-text">
+                <h2>Creación y Gestión de Tiendas Online</h2>
+                <p>
+                  Potencia tu presencia comercial con una tienda online
+                  personalizada. Desde la creación inicial hasta la gestión
+                  diaria, me especializo en desarrollar y mantener tiendas
+                  virtuales intuitivas y seguras en WordPress utilizando
+                  WooCommerce. Con soluciones de pago fáciles y una experiencia
+                  de compra sin problemas, tu tienda online será una herramienta
+                  poderosa para aumentar tus ventas y atraer clientes. Confía en
+                  mí para crear y administrar una plataforma de comercio
+                  electrónico que refleje la esencia de tu marca y te ayude a
+                  alcanzar tus objetivos comerciales.
+                </p>
+              </div>
+            </article>
+            <br />
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
       <div>
