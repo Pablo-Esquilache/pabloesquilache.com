@@ -57,11 +57,14 @@
   width: 70%;
   height: 100%;
   padding-right: 45px;
-  overflow: auto;
 }
 
+/* .card-servicios-text h2 {
+  font-size: 15px !important;
+} */
+
 .card-servicios-text p {
-  font-size: 14px !important;
+  font-size: 12px !important;
 }
 
 /* Estilos para teléfonos móviles */
@@ -76,7 +79,6 @@
 
   .img-servicios-container {
     width: 100%;
-    margin-top: 180px;
   }
 
   .img-servicios {
@@ -84,9 +86,12 @@
   }
 
   .card-servicios-1,
-  .card-servicios-2,
-  .card-servicios-3 {
+  .card-servicios-2{
     margin: 5px 0 50px 0;
+  }
+
+  .card-servicios-text {
+    overflow: auto;
   }
 
   .img-card-servicios {
@@ -102,7 +107,6 @@
 
   .img-servicios-container {
     width: 100%;
-    margin-top: 180px;
   }
 
   .img-servicios-responsive {
@@ -115,6 +119,7 @@
 
   .servicios-card-container {
     width: 100%;
+    height: 100%;
   }
 
   .card-servicios-1,

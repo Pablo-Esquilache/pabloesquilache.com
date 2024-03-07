@@ -17,8 +17,14 @@ export function slider() {
     showSlide(currentIndex - 1);
   }
 
-  document.getElementById("btn-next").addEventListener("click", nextSlide);
-  document.getElementById("btn-prev").addEventListener("click", prevSlide);
+  const btnNext = document.getElementById("btn-next");
+  const btnPrev = document.getElementById("btn-prev");
+
+  // Verificar si los botones existen antes de agregar los event listeners
+  if (btnNext && btnPrev) {
+    btnNext.addEventListener("click", nextSlide);
+    btnPrev.addEventListener("click", prevSlide);
+  }
 
   setInterval(nextSlide, 10000);
 }

@@ -35,8 +35,20 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  gap: 10px;
   width: 100%;
+}
+
+.card-contacto-1,
+.card-contacto-2,
+.card-contacto-3,
+.card-contacto-4 {
+  display: flex;
+flex-direction: row;
+align-items: center;
+width: 100%;
+gap: 10px;
 }
 
 .card-contacto-4 a {
@@ -52,12 +64,18 @@
   color: rgb(255, 102, 0)
 }
 
+.card-contacto-1 h2,
+.card-contacto-2 h2,
+.card-contacto-3 h2,
+.card-contacto-4 h2 {
+  color: rgb(255, 102, 0)
+}
+
 .form-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  height: 70%;
   padding: 0 100px 0 100px;
 }
 
@@ -97,7 +115,7 @@
 
   .img-contacto-container {
     width: 100%;
-    margin-top: 130px;
+    height: 100%;
   }
 
   .contacto-cards-container {
@@ -126,6 +144,7 @@
 
   .contacto-cards-container {
     width: 100%;
+    height: 100%;
   }
 
   .info-container {
