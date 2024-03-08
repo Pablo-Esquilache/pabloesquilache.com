@@ -1,6 +1,11 @@
+.main-sobremi {
+  display: flex;
+  flex-direction: column;
+}
+
 .sobremi-container {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   margin-top: 130px;
 }
 
@@ -92,6 +97,12 @@
 
 .modal-container {
   display: flex;
+  flex-direction: column;
+  margin-top: 150px;
+}
+
+/* .modal-container {
+  display: flex;
   align-items: center;
   justify-content: center;
   position: fixed;
@@ -102,13 +113,12 @@
   left: 50%;
   transform: translate(-50%, -50%);
   cursor: pointer;
-}
+} */
 
 .card-sobremi-1,
 .card-sobremi-3,
-.card-sobremi-2,
-.card-sobremi-4 {
-  display: none;
+.card-sobremi-2 {
+  display: flex;
   width: 90%;
   height: 90%;  
   border: 3px solid white;

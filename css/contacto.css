@@ -95,6 +95,8 @@ gap: 10px;
 
 .form-container input {
   width: 100%;
+  font-family: 'Open Sans', sans-serif !important;
+  font-size: 14px !important;
 }
 
 .form-container textarea {

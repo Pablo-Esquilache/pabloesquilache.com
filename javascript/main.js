@@ -4,14 +4,14 @@ import { slider } from "./slider.js";
 import { scrollScreen } from "./scroll_screen.js";
 import { formContact } from "./form_contact.js";
 import { sendEmail } from "./send_email.js";
-import { modal } from "./modal.js";
+// import { modal } from "./modal.js";
 
 window.addEventListener("DOMContentLoaded", () => {
   manejarNavegacionResponsive();
   slider();
   // activeMenu();
   scrollScreen();
-  modal();
+  // modal();
   formContact();
   sendEmail();
 });
