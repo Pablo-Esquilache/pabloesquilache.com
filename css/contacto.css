@@ -1,7 +1,7 @@
 .contacto-container {
   display: flex;
   flex-direction: row;
-  margin-top: 130px;  
+  margin-top: 130px;
 }
 
 .img-contacto-container {
@@ -10,8 +10,17 @@
   overflow: hidden;
 }
 
+/* #map {
+  width: 100%;
+  height: 100%;
+} */
+
 .img-contacto-container img {
   width: 100%;
+}
+
+.img-maps-2 {
+  display: none;
 }
 
 .contacto-cards-container {
@@ -31,7 +40,8 @@
   padding: 10px 100px 10px 100px;
 }
 
-.card-container-1, .card-container-2 {
+.card-container-1,
+.card-container-2 {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -45,10 +55,10 @@
 .card-contacto-3,
 .card-contacto-4 {
   display: flex;
-flex-direction: row;
-align-items: center;
-width: 100%;
-gap: 10px;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
 }
 
 .card-contacto-4 a {
@@ -61,14 +71,14 @@ gap: 10px;
 .card-contacto-3 i,
 .card-contacto-4 i {
   font-size: 50px;
-  color: rgb(255, 102, 0)
+  color: rgb(255, 102, 0);
 }
 
 .card-contacto-1 h2,
 .card-contacto-2 h2,
 .card-contacto-3 h2,
 .card-contacto-4 h2 {
-  color: rgb(255, 102, 0)
+  color: rgb(255, 102, 0);
 }
 
 .form-container {
@@ -95,7 +105,7 @@ gap: 10px;
 
 .form-container input {
   width: 100%;
-  font-family: 'Open Sans', sans-serif !important;
+  font-family: "Open Sans", sans-serif !important;
   font-size: 14px !important;
 }
 
@@ -118,6 +128,15 @@ gap: 10px;
   .img-contacto-container {
     width: 100%;
     height: 100%;
+    margin-top: 150px;
+  }
+
+  .img-maps-1 {
+    display: none;
+  }
+
+  .img-maps-2 {
+    display: flex;
   }
 
   .contacto-cards-container {
@@ -142,6 +161,15 @@ gap: 10px;
   .img-contacto-container {
     width: 100%;
     margin-top: 130px;
+    margin-top: 150px;
+  }
+
+  .img-maps-1 {
+    display: none;
+  }
+
+  .img-maps-2 {
+    display: flex;
   }
 
   .contacto-cards-container {
@@ -156,7 +184,6 @@ gap: 10px;
   .form-container {
     padding: 10px;
   }
-
 }
 
 /* Estilos para computadoras portátiles y pantallas medianas */
