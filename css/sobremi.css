@@ -65,6 +65,10 @@
   height: 80px;
 }
 
+.sobremi-card-container li a {
+  text-decoration: none;
+}
+
 .sobremi-card-container li h2 {
   display: flex;
   color: rgb(255, 102, 0);
@@ -98,7 +102,9 @@
 .modal-container {
   display: flex;
   flex-direction: column;
-  margin-top: 150px;
+  margin-top: 200px;
+  width: 100%;
+  height: 100%;
 }
 
 /* .modal-container {
@@ -115,20 +121,33 @@
   cursor: pointer;
 } */
 
+.card-container {
+width: 100%;
+height: 100%;
+padding-top: 150px;
+}
+
 .card-sobremi-1,
 .card-sobremi-3,
 .card-sobremi-2 {
   display: flex;
-  width: 90%;
-  height: 90%;  
+  width: 100%;
+  height: 70vh;  
   border: 3px solid white;
   background-color: rgb(255, 102, 0);
+}
+
+.card-sobremi-1 i,
+.card-sobremi-3 i, 
+.card-sobremi-2 i {
+color: white;
+font-size: 20px;
 }
 
 .card-quien-soy-txt {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   justify-content: space-between;
   padding: 20px;
   width: 100%;
@@ -141,6 +160,10 @@
   font-size: 14px !important;
 }
 
+.card-quien-soy-txt i {
+  font-size: 20px;
+}
+
 .modal-open {
   pointer-events: none;
 }
@@ -148,7 +171,7 @@
 /* Estilos para teléfonos móviles */
 @media only screen and (max-width: 600px) {
   .sobremi-container {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 
   .sobremi-img-container {
@@ -191,7 +214,7 @@
 /* Estilos para tabletas */
 @media only screen and (min-width: 601px) and (max-width: 900px) {
   .sobremi-container {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 
   .sobremi-img-container {

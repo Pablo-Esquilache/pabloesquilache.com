@@ -47,7 +47,7 @@
         />
       </div>
     </header>
-    <main class="main-sobremi">
+    <main  id="sobre-mi"  class="main-sobremi">
       <h1>Sobre mi</h1>
       <section class="sobremi-container">
         <div class="sobremi-img-container">
@@ -83,9 +83,9 @@
             </div>
           </div>
           <div class="sobremi-card-container">
-            <li id="sobremi-h2-1"><h2>FORMACION</h2></li>
-            <li id="sobremi-h2-2" class="h2-2"><h2>EXPERIENCIA LABORAL</h2></li>
-            <li id="sobremi-h2-3"><h2>HABILIDADES</h2></li>
+            <li id="sobremi-h2-1"><a href="#sobremi-card1"><h2>FORMACION</h2></a></li>
+            <li id="sobremi-h2-2" class="h2-2"><a href="#sobremi-card2"><h2>EXPERIENCIA LABORAL</h2</a></li>
+            <li id="sobremi-h2-3"><a href="#sobremi-card3"><h2>HABILIDADES</h2></a></li>
           </div>
           <div class="sobremi-saludo-container">
             <p>Agradezco sinceramente tu visita a mi sitio web</p>
@@ -94,7 +94,8 @@
         </div>
       </section>
       <section id="modal-container" class="modal-container">
-        <article id="sobremi-card1" class="card-sobremi-1">
+        <div id="sobremi-card1" class="card-container">
+        <article  class="card-sobremi-1">
           <div class="card-quien-soy-txt">
             <h2>Mi formacion</h2>
             <li>
@@ -142,9 +143,12 @@
                 www.educacionit-com
               </p>
             </li>
+            <a href="#sobre-mi"><i class="fa-solid fa-chevron-up"></i></a> 
           </div>
         </article>
-        <article id="sobremi-card2" class="card-sobremi-2">
+      </div>
+      <div id="sobremi-card2"  class="card-container" >
+        <article class="card-sobremi-2">
           <div class="card-quien-soy-txt">
             <h2>Mi experiencia laboral</h2>
             <li>
@@ -176,9 +180,12 @@
               <p>- Manejo de caja.</p>
               <p>- Atención al cliente.</p>
             </li>
+            <a href="#sobre-mi"><i class="fa-solid fa-chevron-up"></i></a> 
           </div>
         </article>
-        <article id="sobremi-card3" class="card-sobremi-3">
+      </div>
+      <div id="sobremi-card3"  class="card-container">
+        <article class="card-sobremi-3">
           <div class="card-quien-soy-txt">
             <h2>Habilidades Adicionales</h2>
             <li>
@@ -227,15 +234,17 @@
                 línea utilizando el plugin WooCommerce para WordPress.
               </p>
             </li>
+            <a href="#sobre-mi"><i class="fa-solid fa-chevron-up"></i></a>            
           </div>
         </article>
+      </div>
       </section>
     </main>
     <footer>
       <div>
-        <li><i class="fa-brands fa-facebook"></i></li>
-        <li><i class="fa-brands fa-instagram"></i></li>
-        <li><i class="fa-brands fa-github"></i></li>
+        <li><a href="https://www.facebook.com/profile.php?id=61557104991404&mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+        <li><a href="https://www.instagram.com/codigo_desarrollo_web?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="https://github.com/Pablo-Esquilache" target="_blank"><i class="fa-brands fa-github"></i></a></li>
       </div>
       <div><b>copyright©2024 - Pablo Esqilache</b></div>
       <div>
