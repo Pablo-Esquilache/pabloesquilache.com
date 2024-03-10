@@ -128,15 +128,6 @@
   .img-contacto-container {
     width: 100%;
     height: 100%;
-    margin-top: 150px;
-  }
-
-  .img-maps-1 {
-    display: none;
-  }
-
-  .img-maps-2 {
-    display: flex;
   }
 
   .contacto-cards-container {
@@ -160,16 +151,8 @@
 
   .img-contacto-container {
     width: 100%;
-    margin-top: 130px;
+    height: 100%;
     margin-top: 150px;
-  }
-
-  .img-maps-1 {
-    display: none;
-  }
-
-  .img-maps-2 {
-    display: flex;
   }
 
   .contacto-cards-container {
