@@ -1,36 +1,7 @@
-// export function slider() {
-//   const slider = document.querySelector(".slider");
-//   const totalSlides = document.querySelectorAll(".slider img").length;
-//   let currentIndex = 0;
-
-//   function showSlide(index) {
-//     currentIndex = (index + totalSlides) % totalSlides;
-//     const translateValue = -currentIndex * 100 + "%";
-//     slider.style.transform = "translateX(" + translateValue + ")";
-//   }
-
-//   function nextSlide() {
-//     showSlide(currentIndex + 1);
-//   }
-
-//   function prevSlide() {
-//     showSlide(currentIndex - 1);
-//   }
-
-//   const btnNext = document.getElementById("btn-next");
-//   const btnPrev = document.getElementById("btn-prev");
-
-//   // Verificar si los botones existen antes de agregar los event listeners
-//   if (btnNext && btnPrev) {
-//     btnNext.addEventListener("click", nextSlide);
-//     btnPrev.addEventListener("click", prevSlide);
-//   }
-
-//   setInterval(nextSlide, 10000);
-// }
-
 export function initializeSlider() {
-  const slides = document.querySelectorAll('.slider img');
+  let slides;
+  const slidesDesktop = document.querySelectorAll('.slider img');
+  const slidesResponsive = document.querySelectorAll('.slider-respon img');
   const prevBtn = document.querySelector('.prev-btn');
   const nextBtn = document.querySelector('.next-btn');
   let currentSlide = 0;
@@ -55,8 +26,20 @@ export function initializeSlider() {
     showSlide(currentSlide);
   }
 
+  function setSlides() {
+    slides = slidesResponsive.length > 0 ? slidesResponsive : slidesDesktop;
+  }
+
+  setSlides();
+  showSlide(currentSlide);
+
   nextBtn.addEventListener('click', nextSlide);
   prevBtn.addEventListener('click', prevSlide);
 
   setInterval(nextSlide, 5000);
+
+  window.addEventListener('resize', () => {
+    setSlides();
+    showSlide(currentSlide);
+  });
 }

@@ -18,10 +18,6 @@
   display: none;
 }
 
-.slider-respon {
-  display: none;
-}
-
 .servicios-card-container {
   display: flex;
   flex-direction: column;
@@ -117,12 +113,12 @@
     display: none;
   }
 
-  .slider-respon {
-    display: flex;
-  }
-
   .slider {
     display: none;
+  }
+
+  .slider-respon {
+    display: flex;
   }
 
   .servicios-card-container {
