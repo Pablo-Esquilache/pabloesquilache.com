@@ -1,41 +1,39 @@
-/* Estilos para el contenedor del slider */
+
 .slider-container {
   position: relative;
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 
-/* Estilos para el slider */
 .slider {
+  width: 100%;
+  height: 100%;
   display: flex;
-  width: 300%;
   transition: transform 0.5s ease-in-out;
 }
 
-/* Estilos para las imágenes dentro del slider */
-.slider-img {
-  width: 100%;
-  flex: 0 0 100%;
-}
+/* .slider img {
+  object-fit: contain;
+  object-position: center;
+} */
 
-/* Estilos para los botones de navegación del slider */
-.button {
+.prev-btn,
+.next-btn {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   background-color: transparent;
   border: none;
   color: white;
-  font-size: 20px;
+  padding: 10px;
   cursor: pointer;
 }
 
-/* Estilos para el botón de navegación izquierdo */
-#btn-prev {
-  left: 10px;
+.prev-btn {
+  left: 0;
 }
 
-/* Estilos para el botón de navegación derecho */
-#btn-next {
-  right: 10px;
+.next-btn {
+  right: 0;
 }

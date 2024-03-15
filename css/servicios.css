@@ -7,7 +7,7 @@
 .img-servicios-container {
   width: 40%;
   height: 80vh;
-  overflow: hidden;
+  position: relative;
 }
 
 .img-servicios-container img {
@@ -15,6 +15,10 @@
 }
 
 .img-servicios-responsive {
+  display: none;
+}
+
+.slider-respon {
   display: none;
 }
 
@@ -110,6 +114,14 @@
   }
 
   .img-servicios {
+    display: none;
+  }
+
+  .slider-respon {
+    display: flex;
+  }
+
+  .slider {
     display: none;
   }
 
