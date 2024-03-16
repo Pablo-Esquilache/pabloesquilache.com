@@ -43,6 +43,8 @@
   justify-content: space-between;
   gap: 10px;
   width: 100%;
+  height: 50%;
+  margin: 10px;
 }
 
 .card-contacto-1,
@@ -52,8 +54,11 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 100%;
+  width: 50%;
   gap: 10px;
+  width: 100%;
+  height: 100%;
+  overflow: auto
 }
 
 .card-contacto-4 a {
@@ -65,7 +70,7 @@
 .card-contacto-2 i,
 .card-contacto-3 i,
 .card-contacto-4 i {
-  font-size: 50px;
+  font-size: 30px;
   color: rgb(255, 102, 0);
 }
 
@@ -75,6 +80,13 @@
 .card-contacto-4 h2 {
   color: rgb(255, 102, 0);
   font-weight: normal;
+}
+
+.card-contacto-1 p,
+.card-contacto-2 p,
+.card-contacto-3 p,
+.card-contacto-4 p {
+font-size: 14px;
 }
 
 .form-container {
@@ -175,10 +187,12 @@
 
   .info-container {
     padding: 10px;
+    height: 40%;
   }
 
   .form-container {
     padding: 10px;
+    height: 60%;
   }
 }
 
