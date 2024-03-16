@@ -59,6 +59,10 @@
   padding-right: 45px;
 }
 
+.card-servicios-text h2 {
+  font-weight: normal;
+}
+
 .card-servicios-text p {
   font-size: 12px !important;
 }
@@ -75,6 +79,7 @@
 
   .img-servicios-container {
     width: 100%;
+    margin-top: 150px;
   }
 
   .img-servicios {

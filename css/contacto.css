@@ -10,16 +10,11 @@
   overflow: hidden;
 }
 
-/* #map {
-  width: 100%;
-  height: 100%;
-} */
-
 .img-contacto-container img {
   width: 100%;
 }
 
-.img-maps-2 {
+.img-contacto-respon {
   display: none;
 }
 
@@ -79,6 +74,7 @@
 .card-contacto-3 h2,
 .card-contacto-4 h2 {
   color: rgb(255, 102, 0);
+  font-weight: normal;
 }
 
 .form-container {
@@ -128,6 +124,15 @@
   .img-contacto-container {
     width: 100%;
     height: 100%;
+    margin-top: 150px;
+  }
+
+  .img-contacto-respon {
+    display: flex;
+  }
+
+  .img-contacto {
+    display: none;
   }
 
   .contacto-cards-container {
@@ -153,6 +158,14 @@
     width: 100%;
     height: 100%;
     margin-top: 150px;
+  }
+
+  .img-contacto-respon {
+    display: flex;
+  }
+
+  .img-contacto {
+    display: none;
   }
 
   .contacto-cards-container {

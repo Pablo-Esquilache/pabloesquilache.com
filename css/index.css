@@ -14,6 +14,16 @@
   display: none;
 }
 
+.logo-respon {
+  display: none;
+  position: absolute;
+  width: 300px !important;
+  height: 300px !important;
+  top: 30%;
+  left: 30%;
+  z-index: 2;
+}
+
 .index-card-container {
   display: flex;
   flex-direction: row;
@@ -42,6 +52,10 @@
   font-size: 14px !important;
 }
 
+.card-index h2 {
+  font-weight: normal;
+}
+
 .img-card-index {
   width: 150px;
 }
@@ -55,7 +69,11 @@
   .portada-web-responsive {
     display: block;
   }
-  
+
+  .logo-respon {
+    display: flex;
+  }
+
   .index-card-container {
     flex-direction: column;
   }
@@ -67,9 +85,6 @@
 
 /* Estilos para tabletas */
 @media only screen and (min-width: 601px) and (max-width: 900px) {
-  /* .background-container {
-    height: 50vh;
-  } */
   .index-card-container {
     flex-direction: column;
   }
