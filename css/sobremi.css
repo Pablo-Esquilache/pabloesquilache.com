@@ -97,7 +97,10 @@
 }
 
 .sobremi-img-container img {
-  width: 100%;
+  width: 100%; /* Ajustar el ancho de la imagen al 100% del contenedor */
+    height: 100%; /* Ajustar la altura de la imagen al 100% del contenedor */
+    object-fit: cover; /* Esto hace que la imagen se ajuste dentro del contenedor sin distorsionarla */
+    object-position: center;
 }
 
 .modal-container {
@@ -179,11 +182,12 @@ font-size: 20px;
   .sobremi-img-container {
     width: 100%;
     height: 100%;
-    margin-top: 100px;
+    margin-top: 150px;
   }
 
   .sobremi-txt-container {
     width: 100%;
+    height: 100%;
   }
 
   .sobremi-presentacion-container {
@@ -221,7 +225,9 @@ font-size: 20px;
   }
 
   .sobremi-img-container {
+    margin-top: 150px;
     width: 100%;
+    height: 100%;
   }
 
   .sobremi-txt-container {
@@ -232,9 +238,6 @@ font-size: 20px;
     flex-direction: column;
   }
 
-  .sobremi-img-container {
-    margin-top: 100px;
-  }
   .img-container {
     width: 100%;
     text-align: center;

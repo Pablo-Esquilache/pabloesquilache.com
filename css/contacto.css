@@ -82,13 +82,6 @@
   font-weight: normal;
 }
 
-.card-contacto-1 p,
-.card-contacto-2 p,
-.card-contacto-3 p,
-.card-contacto-4 p {
-font-size: 14px;
-}
-
 .form-container {
   display: flex;
   flex-direction: column;
@@ -149,6 +142,7 @@ font-size: 14px;
 
   .contacto-cards-container {
     width: 100%;
+    height: 100%;
   }
 
   .info-container {

@@ -20,11 +20,6 @@
   transition: transform 0.5s ease-in-out;
 }
 
-/* .slider img {
-  object-fit: contain;
-  object-position: center;
-} */
-
 .prev-btn,
 .next-btn {
   position: absolute;
