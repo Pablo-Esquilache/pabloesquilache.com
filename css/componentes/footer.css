@@ -39,6 +39,15 @@ footer div {
     align-items: center;
     height: 50%;
   }
+
+  footer li a {
+    font-size: 14px !important;
+  }
+
+  footer div p {
+    font-size: 14px !important;
+  }
+  
   footer div {
     width: 100%;
   }
